@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<schedule id="1">
+  <id>447039015161700</id>
+  <name>Schedule 2</name>
+  <blockJob id="2">
+    <block class="com.kapowtech.scheduler.server.entity.SequentialBlock" id="3">
+      <project id="4"/>
+      <name>Schedule 21685333427302</name>
+      <namedBlock>false</namedBlock>
+      <childReference id="5">
+        <child class="concurrentBlock" id="6">
+          <project reference="4"/>
+          <name>Schedule 2:middleBlock</name>
+          <namedBlock>false</namedBlock>
+        </child>
+        <scopeName>0</scopeName>
+        <enabled>true</enabled>
+        <order>0</order>
+      </childReference>
+    </block>
+    <blockInput>&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+
+&lt;InputConfiguration&gt;
+  &lt;usesNewEncryption&gt;true&lt;/usesNewEncryption&gt;
+  &lt;__inputObjects/&gt;
+&lt;/InputConfiguration&gt;</blockInput>
+    <schedule reference="1"/>
+    <active>false</active>
+    <displayNameMap>{}</displayNameMap>
+  </blockJob>
+  <triggerUnit>3</triggerUnit>
+  <totalRuns>1</totalRuns>
+  <active>true</active>
+  <useEmailNotification>false</useEmailNotification>
+  <emails/>
+  <previousRun id="7">2023-05-29 04:10:27.0 UTC</previousRun>
+  <maxRuntime>-1</maxRuntime>
+  <maxObjectsExtracted>-1</maxObjectsExtracted>
+  <createdBy>admin</createdBy>
+  <modifiedBy>admin</modifiedBy>
+  <cluster id="8">
+    <name>Non Production</name>
+  </cluster>
+  <scheduler class="org.quartz.impl.StdScheduler" id="9">
+    <scheduler/></scheduler>
+  <trigger class="org.quartz.impl.triggers.SimpleTriggerImpl" id="10">
+    <name>447039015161700</name>
+    <start id="11">2023-05-29 04:10:22.241 UTC</start>
+    <interval>3600000</interval>
+    <repeatCount>-1</repeatCount>
+  </trigger>
+  <revisionNumber>local</revisionNumber>
+  <tasksPriority>MEDIUM</tasksPriority>
+  <tasksTimeout>600000</tasksTimeout>
+  <commitMessage/>
+  <lastModified id="12">2023-05-29 04:10:27.0 UTC</lastModified>
+  <serializationVersion>1</serializationVersion>
+</schedule>
